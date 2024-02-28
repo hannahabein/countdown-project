@@ -1,0 +1,87 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:#bcccdc;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+    height: 80vh;
+
+}
+
+img{
+    border-radius: 10px;
+}
+
+.countDownContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 1cm;
+}
+
+.countDownTitle{
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+h2{
+    color: rgb(70, 94, 150);
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:15px;
+}
+
+/* table{
+    color: rgb(3, 3, 51);
+    font-size: 20px;
+    height: 5px;
+    border:2px solid rgb(6, 6, 85);
+    background-color:#063254;
+    border-color:#063254 ;
+    margin-right: 30px;
+    padding: 10px 16px;
+}
+
+th{
+    text-align:center;
+    color:white;
+    border-color: rgb(11, 3, 60);
+}
+
+td{
+    text-align: center;
+    color:white;
+    margin: 5px;
+} */
+
+.lauch-time{
+    display: flex;
+    font-size: 40px;
+}
+
+.lauch-time div{
+    background-color: #062354;
+    border-radius: 4px;
+    color: white;
+    padding: 0 16;
+    text-align: center;
+    margin: 9px;
+    flex-basis: 100px;
+    border-radius: 10px;
+    border-width: 10px;
+    border-style:unset;
+    height: 90px;
+}
+.lauch-time div span{
+    font-size: 30px;
+}

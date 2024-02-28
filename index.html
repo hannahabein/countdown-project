@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <img src="project image.png" width="700px" height="500px"/>
+
+    <div class="countDownContent">
+      <div class="countDownTitle">
+        <h2 style="font-size: 35px;">OLD IPHONE GIVEAWAY</h2>
+        <h3 style="font-size: 20px;font-family:var(-ff-secondary);">
+          Giveaway Ends On Thursday, 7 March 2024 At <br> 11:30am
+        </h3>
+      </div>
+      <p style="font-family: 'Times New Roman', Times, serif;font-size:25px;">
+        Lorem ipsum dolor sit, amet consecteur adipisicing 
+        elit. Reprehenderit <br> molestiae cum libero atque ut
+        voluptae qui consecteur aliquid incidunt <br>
+        voluptatem quos, dolore, non commodi quaerat
+        aliquam eligendi,<br> quisquam totam blanditiis.
+      </p>
+      <!-- <table>
+        <tr >
+          <th id="DAYS">&ensp;&ensp;&ensp;00&ensp;&ensp;&ensp;</th>
+          <th id="HOURS">&ensp;&ensp;&ensp;00&ensp;&ensp;&ensp;</th>
+          <th id="MINS">&ensp;&ensp;&ensp;00&ensp;&ensp;&ensp;</th>
+          <th id="SECS">&ensp;&ensp;&ensp;00&ensp;&ensp;&ensp;</th>
+        </tr>
+        <tr>
+          <td>&ensp;&ensp;&ensp;DAYS&ensp;&ensp;&ensp;</td>
+          <td>&ensp;&ensp;&ensp;HOURS&ensp;&ensp;&ensp;</td>
+          <td>&ensp;&ensp;&ensp;MINS&ensp;&ensp;&ensp;</td>
+          <td>&ensp;&ensp;&ensp;SECS&ensp;&ensp;&ensp;</td>
+        </tr>
+      </table> -->
+
+      <div class="lauch-time" >
+        <div>
+            <p id="DAYS">00</p>
+            <span>DAYS</span>
+        </div>
+        <div>
+            <p id="HOURS">00</p>
+            <span>HOURS</span>
+        </div>
+        <div>
+            <p id="MINS">00</p>
+            <span>MINS</span>
+        </div>
+        <div>
+            <p id="SECS">00</p>
+            <span>SECS</span>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+    var x=new Date()
+    var y=x.getTime()
+    var total = y+(21*24*3600000);
+    function count ()
+    {
+        var now = new Date ()
+        var currentTime = now.getTime();
+        var diff = total-currentTime
+        var s = Math.floor(diff/1000)
+        var m = Math.floor(s/60)
+        var h = Math.floor(m/60)
+        var d = Math.floor(h/60)
+h=h%24;
+m=m%60;
+s=s%60;
+
+h=(h<10)?"0"+h:h;
+m=(m<10)?"0"+m:m;
+s=(s<10)?"0"+s:s;
+
+document.getElementById("DAYS").innerHTML=d;
+document.getElementById("HOURS").innerHTML=h;
+document.getElementById("MINS").innerHTML=m;
+document.getElementById("SECS").innerHTML=s;
+    
+    setTimeout(count,1000);
+    }
+    count();
+</script>
+  </body>
+</html>
